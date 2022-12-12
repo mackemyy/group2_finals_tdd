@@ -1,0 +1,172 @@
+body {
+    font-family: "Poppins";
+    background-image: url("../src/assets/bg.png");
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    font-family: "Poppins";
+    font-weight: 500;
+    letter-spacing: 2px;
+    float: left;
+    position: fixed;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  #profile-btn{
+    margin-right: 50px;
+    padding-bottom: 3px;
+  }
+
+  #mycart-btn.active {
+    color:  #F68A1E;
+  }
+  
+  .topnav a:hover {
+    background-color: #F68A1E;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav a.active {
+
+    color: white;
+  }
+
+  .topnav a.active:hover {
+    background-color: white;
+    color: #F68A1E;
+  }
+
+  .checkoutForm {
+    position: absolute;
+    width: 1350px;
+    height: 650px;
+    left: 170px;
+    top: 90px;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: 0 0 10px black;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 82px;
+    color: #F68A1E;
+    padding-left: 50px;
+    padding-top: 35px;
+  }
+  
+  .column {
+
+    width: 40%;
+    padding-left: 55px;
+  }
+
+  #col1 {
+    float: left;
+  }
+
+  #col2 {
+    float: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .subtitle {
+    top: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+    color: #F68A1E;
+  }
+
+  .line {
+    height: 1px;
+
+    background: black;
+    width: 83%;
+    float: left;
+  }
+
+
+  #ship-details{
+    padding: 10px;
+    margin-top: 20px;
+    height: 90px;
+    width: 455px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+  }
+
+  .c-ship{
+    float: left;
+    font-weight: 555;
+    font-size: 120%;
+  }
+
+#c1{
+    padding-left: 8px;
+  }
+
+#c2{
+    padding-right: 10px;
+    float: right;
+}
+
+    #editShip-btn{
+    color: black;
+    float: right;
+    
+    }
+
+  .placeOrderBtn {
+
+    width: 345px;
+    height: 70px;
+    left: 170px;
+    top: 460px;
+    background: #F68A1E;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 52px;
+    letter-spacing: 0.055em;
+    cursor: pointer;
+  }
+  .placeOrderBtn:hover {
+    background-color: white;
+    border: 2px solid;
+    color: #F68A1E;
+  }/*# sourceMappingURL=login.css.map */
