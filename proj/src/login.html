@@ -25,14 +25,14 @@
                 <div class="input_fields">
                     <form action="">
                         <label for="email">Email:</label> <br>
-                        <input type="text" id="email" name="email"><br> <br>
+                        <input type="text" id="email" name="email" type="text" data-testid="email-input"><br> <br>
                         <label for="password">Password:</label> <br>
-                        <input type="password" id="password" name="password"><br>
-                        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                        <input type="password" id="password" name="password" type="password" data-testid="password-input"><br>
+                        <i class="far fa-eye" id="togglePassword" data-testid="toggle-pass" style="margin-left: -30px; cursor: pointer;"></i>
                     </form>
                 </div>
                 <div>
-                    <button class="loginBtn">LOGIN</button>
+                    <button class="loginBtn" data-testid="login-input-btn">LOGIN</button>
                     </div>
                 </div>
             </div>
