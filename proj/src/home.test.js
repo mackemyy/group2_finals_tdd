@@ -24,31 +24,31 @@ afterEach(cleanup);
 jest.mock("axios");
 
 describe("Check Home screen",()=>{
-	it("has a button for discover products",()=>{
+	it("check if there is a button for discover products",()=>{
         render(); 
 		const btn_discover = screen.getByTestId("discover-btn");
 	    expect(btn_discover).toBeInTheDocument();
 	});
 
-    it("has a button for homepage navigate",()=>{
+    it("check if there is a button for homepage navigate",()=>{
         render(); 
 		const btn_home = screen.getByTestId("home-btn");
 	    expect(btn_home).toBeInTheDocument();
 	});
 
-    it("has a button for about page navigate",()=>{
+    it("check if there is a button for about page navigate",()=>{
         render(); 
 		const btn_about = screen.getByTestId("about-btn");
 	    expect(btn_about).toBeInTheDocument();
 	});
 
-    it("has a button for products page navigate",()=>{
+    it("check if there is a button for products page navigate",()=>{
         render(); 
 		const btn_products = screen.getByTestId("products-btn");
 	    expect(btn_products).toBeInTheDocument();
 	});
 
-    it("has a button for login navigate",()=>{
+    it("check if there is a button for login navigate",()=>{
         render(); 
 		const btn_login = screen.getByTestId("login-btn");
 	    expect(btn_login).toBeInTheDocument();
