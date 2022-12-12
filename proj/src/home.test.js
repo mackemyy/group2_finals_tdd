@@ -1,7 +1,7 @@
 import axios from "axios";
 import { render, waitFor, screen, cleanup, fireEvent, debug } from "@testing-library/react";
 import { ValidateUser } from "./Utils";
-import Register from "./App";
+
 
 const mockToken = "QpwL5tke4Pnpja7X4";
 
@@ -25,20 +25,57 @@ jest.mock("axios");
 
 describe("Check Home screen",()=>{
 	it("has a button for discover products",()=>{
+        render(); 
+		const btn_discover = screen.getByTestId("discover-btn");
+	    expect(btn_discover).toBeInTheDocument();
 	});
 
     it("has a button for homepage navigate",()=>{
+        render(); 
+		const btn_home = screen.getByTestId("home-btn");
+	    expect(btn_home).toBeInTheDocument();
 	});
 
     it("has a button for about page navigate",()=>{
+        render(); 
+		const btn_about = screen.getByTestId("about-btn");
+	    expect(btn_about).toBeInTheDocument();
 	});
 
     it("has a button for products page navigate",()=>{
+        render(); 
+		const btn_products = screen.getByTestId("products-btn");
+	    expect(btn_products).toBeInTheDocument();
 	});
 
     it("has a button for login navigate",()=>{
+        render(); 
+		const btn_login = screen.getByTestId("login-btn");
+	    expect(btn_login).toBeInTheDocument();
 	});
 })
+
+////////////////REACT TEST JEST FOR BUTTONS EXAMPLE 
+
+// import React from 'react';
+// import { shallow } from 'enzyme';
+// import MyButton from './MyButton';
+
+// describe('MyButton', () => {
+//   it('calls the onClick function when clicked', () => {
+//     const onClick = jest.fn();
+//     const wrapper = shallow(<MyButton onClick={onClick} />);
+
+//     // Simulate a click on the button
+//     wrapper.find('button').simulate('click');
+
+//     // Assert that the onClick function was called
+//     expect(onClick).toHaveBeenCalled();
+//   });
+// });
+
+
+//////////////////DEFAULT CODE FROM TDD FILES GDRIVE
 
 // describe("Check if ValidateUser fn is defined", () => {
 // 	it("ValidateUser fn exist", async () => {
