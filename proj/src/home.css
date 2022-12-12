@@ -17,6 +17,7 @@ body {
   letter-spacing: 2px;
   float: left;
   position: fixed;
+  top: 0;
   width: 100%;
   padding-right: 20px;
 }
@@ -29,6 +30,7 @@ body {
   font-size: 17px;
   border-radius: 5px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 .topnav a:hover {
   background-color: #F68A1E;
@@ -63,8 +65,9 @@ body {
 
 .subtitle {
   font-family: "Poppins";
+  text-align: left;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 21px;
   line-height: 40px;
   position: absolute;
@@ -89,10 +92,11 @@ body {
   font-family: "Poppins";
   font-size: 20px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .discoverBtn:hover {
   background-color: white;
   border-color: none;
   color: #F68A1E;
-  font-weight: 800;
+  font-weight: 500;
 }/*# sourceMappingURL=home.css.map */
