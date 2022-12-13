@@ -1,26 +1,7 @@
-import axios from "axios";
-import { render, waitFor, screen, cleanup, fireEvent, debug } from "@testing-library/react";
+import { render, screen, cleanup } from "@testing-library/react";
 import App from './App';
 
-const mockToken = "QpwL5tke4Pnpja7X4";
-
-const validUser = {
-  'email': 'eve.holt@reqres.in',
-  'password': 'cityslicka'
-}
-
-const invalidUser = {
-  'email': 'aaa',
-  'password': '111'
-}
-
-const resultToken = {
-	token: 'QpwL5tke4Pnpja7X4'
-}
-
 afterEach(cleanup);
-
-jest.mock("axios");
 
 describe("Check Home screen", ()=>{
 	it("check if there is a button for discover products",()=>{
@@ -54,29 +35,30 @@ describe("Check Home screen", ()=>{
 	});
 })
 
-describe("Check Login screen", ()=>{
-	it("check if there is an email input",()=>{
-    render(<App/>);
-		const input = screen.getByTestId("email-input");
-		expect(input).toBeInTheDocument();
+// ////////////////TEST FOR LOGIN SCREEN
+// describe("Check Login screen", ()=>{
+// 	it("check if there is an email input",()=>{
+//     render(<App/>);
+// 		const input = screen.getByTestId("email-input");
+// 		expect(input).toBeInTheDocument();
 
-		expect(input).toHaveAttribute("type", "text");
-	});
+// 		expect(input).toHaveAttribute("type", "text");
+// 	});
 
-    it("check if there is a password input",()=>{
-    render(<App/>);
-		const input = screen.getByTestId("password-input");
-		expect(input).toBeInTheDocument();
+//     it("check if there is a password input",()=>{
+//     render(<App/>);
+// 		const input = screen.getByTestId("password-input");
+// 		expect(input).toBeInTheDocument();
 
-		expect(input).toHaveAttribute("type", "password");
-	});
+// 		expect(input).toHaveAttribute("type", "password");
+// 	});
 
-    it("check if there is a button for logging in",()=>{
-    render(<App/>);
-		const btn_login = screen.getByTestId("login-input-btn");
-	  expect(btn_login).toBeInTheDocument();
-	});
-})
+//     it("check if there is a button for logging in",()=>{
+//     render(<App/>);
+// 		const btn_login = screen.getByTestId("login-input-btn");
+// 	  expect(btn_login).toBeInTheDocument();
+// 	});
+// })
 
 
 ////////////////REACT TEST JEST FOR BUTTONS EXAMPLE 
