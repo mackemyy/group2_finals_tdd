@@ -112,7 +112,7 @@ body {
     height: 1px;
 
     background: black;
-    width: 83%;
+    width: 88%;
     float: left;
   }
 
@@ -146,6 +146,67 @@ body {
     float: right;
     
     }
+
+.subtitle2{
+  font-style: italic;
+  margin-bottom: 5px;
+  color: rgb(102,102, 102)
+}
+
+.pay-info{
+width: 420px;
+height: 46px;
+background: rgba(217, 217, 217);
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+#john{
+  font-size: 18px;
+  padding: 10px;
+}
+
+.mini-row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#mcol1{
+  float: left;
+}
+
+#mcol2{
+  float: right;
+  margin-right: 120px;
+}
+
+#mcol3{
+  float: right;
+
+}
+
+#expDate{
+  width: 180px;
+  height: 46px;
+}
+
+#john1{
+  font-size: 18px;
+  padding: 10px;
+  font-style: italic;
+  color: rgb(102,102, 102);
+}
+
+#editPay-btn{
+  color: black;
+  float: right;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 53px;
+}
+
+
 
   .placeOrderBtn {
 
