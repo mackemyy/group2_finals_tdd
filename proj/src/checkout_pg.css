@@ -68,6 +68,13 @@ body {
     box-shadow: 0 0 10px black;
   }
 
+  .check-space{
+
+    margin-left: 65px;
+    margin-bottom: 20px;
+
+  }
+
   .title {
     font-style: normal;
     font-weight: 600;
@@ -112,7 +119,7 @@ body {
     height: 1px;
 
     background: black;
-    width: 78%;
+    width: 83%;
     float: left;
   }
 
@@ -301,7 +308,7 @@ padding: 5px;
 
 
   .placeOrderBtn {
-    margin-right: 148px;
+    margin-right: 120px;
     float: right;
     width: 250px;
     height: 60px;
