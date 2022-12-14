@@ -61,7 +61,7 @@ body {
     position: absolute;
     width: 1350px;
     height: 650px;
-    left: 170px;
+    margin-left: 180px;
     top: 90px;
     background-color: white;
     border-radius: 35px;
@@ -80,7 +80,7 @@ body {
   
   .column {
 
-    width: 40%;
+    width: 45%;
     padding-left: 55px;
   }
 
@@ -112,7 +112,7 @@ body {
     height: 1px;
 
     background: black;
-    width: 88%;
+    width: 78%;
     float: left;
   }
 
@@ -178,7 +178,8 @@ margin-bottom: 10px;
 
 #mcol2{
   float: right;
-  margin-right: 120px;
+  margin-right: 188px;
+  
 }
 
 #mcol3{
@@ -206,12 +207,104 @@ margin-bottom: 10px;
   margin-top: 53px;
 }
 
+.cart-card{
+width: 450px;
+height: 80px;
+background: rgba(217, 217, 217);
+border-radius: 10px;
+margin-bottom: 10px;
+padding: 5px;;
+}
+
+#croissant{
+  background-image: url("../src/assets/products/croissant.png");
+  width: 80px;
+  height: 70px;
+  background-repeat: no-repeat; 
+  border-radius: 5px;
+  background-color: white;
+  background-position: center;
+  background-size: contain;
+}
+
+#slicedbread{
+  background-image: url("../src/assets/products/sliced-bread.png");
+  width: 80px;
+  height: 70px;
+  background-repeat: no-repeat; 
+  border-radius: 5px;
+  background-color: white;
+  background-position: center;
+  background-size: contain;
+}
+
+
+.cart-row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#pic-col1{
+  margin-top: 5px;
+ float: left;
+ width: 20%;
+}
+
+#pic-col2{
+  font-weight:600;
+  float: right;
+  width: 50%;
+  position: absolute;
+  margin-left: 95px;
+  margin-top: 5px;
+}
+
+#pic-details{
+  margin-right: 150px;
+
+}
+
+#pic-col3{
+  position: absolute;
+  width: 30%;
+  margin-left: 320px;
+  margin-top: 28px;
+  font-style: italic;
+  color: rgb(102,102, 102);
+}
+
+.pay-details{
+  width: 450px;
+height: 100px;
+background: rgba(217, 217, 217);
+border-radius: 10px;
+margin-bottom: 10px;
+padding: 5px;
+}
+
+#pay-col1{
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#pay-col2{
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#bold{
+  font-weight: 600;
+}
 
 
   .placeOrderBtn {
-
-    width: 345px;
-    height: 70px;
+    margin-right: 148px;
+    float: right;
+    width: 250px;
+    height: 60px;
     left: 170px;
     top: 460px;
     background: #F68A1E;
@@ -221,7 +314,7 @@ margin-bottom: 10px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 52px;
     letter-spacing: 0.055em;
     cursor: pointer;
